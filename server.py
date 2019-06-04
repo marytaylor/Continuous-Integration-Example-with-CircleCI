@@ -15,6 +15,12 @@ app = Flask(__name__)
 # Load the model
 model = pickle.load(open('model.pkl','rb'))
 
+@app.route('/')
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'Hello, this is the Homepage.'
+
+
 @app.route('/api',methods=['POST'])
 def predict():
     # Get the data from the POST request.
