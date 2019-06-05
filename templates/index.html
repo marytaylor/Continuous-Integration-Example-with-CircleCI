@@ -12,7 +12,7 @@
 		<div id="brandname">
 			MSDS 434 SEC 55 Application
 		</div>
-		<h2>Predicting Income from Years of Experience</h2>
+		<h2>Spam Identifier:</h2>
 		
 	</div>
 	</header>
@@ -20,7 +20,7 @@
 	<div class="ml-container">
 
 		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Years of Experience Here</p>
+		<p>Enter an e-mail subject line or a social comment here.</p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="comment" rows="4" cols="50"></textarea>
 		<br/>
