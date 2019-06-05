@@ -2,11 +2,12 @@ pytest
 pylint
 jupyter
 pytest-cov
-pandas
 nbval
 click
-flask
 requests
-numpy
 sklearn
-gunicorn
+Flask==0.12.3 
+gunicorn==19.6.0	
+pandas==0.22.0
+numpy==1.11.2
+scipy==0.18.1
