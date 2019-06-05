@@ -15,14 +15,14 @@
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for e-mail subject or comment text:</b></p>
+	<p style="color:blue;font-size:20;"><b>Results for e-mail subject or comment text:</b></p>
 	<div class="results">
 
 		
 	{% if prediction == 1%}
 	<h2 style="color:red;">This is Spam</h2>
 	{% elif prediction == 0%}
-		<h2 style="color:blue;">This is <b>Not</b> a Spam</h2>
+		<h2 style="color:blue;">This is <b>Not</b> Spam</h2>
 	{% endif %}
   
 	</div>
