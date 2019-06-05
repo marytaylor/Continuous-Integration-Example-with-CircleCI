@@ -11,16 +11,19 @@
 		<div id="brandname">
 			MSDS 434 SEC 55 Application
 		</div>
-		<h2>Predicting Income from Years of Experience</h2>
+		<h2>Spam Identifier:</h2>
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Years of Experience:</b></p>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for e-mail subject or comment text:</b></p>
 	<div class="results">
 
-
 		
-	{% print(prediction) %}
+	{% if prediction == 1%}
+	<h2 style="color:red;">This is Spam</h2>
+	{% elif prediction == 0%}
+		<h2 style="color:blue;">This is <b>Not</b> a Spam</h2>
+	{% endif %}
   
 	</div>
 
